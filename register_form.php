@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-utf-8" />
 
-  <title>Assignment #3</title>
+  <title>Assignment #2</title>
 
   <!--This is the link to the CSS Stylesheet-->
   <link rel='stylesheet' href='./css/style.css' />
@@ -18,7 +18,7 @@
   <!--The entire form, header info and main content section are wrapped in a div to ensure that the background of the form stretches to fill the entire browser frame from top to bottom (vertically)-->
   <div id='background_fill'>
     <div id='main_wrapper'>
-      <h1>Assignment #3</h1>
+      <h1>Assignment #2</h1>
       <header id='title_info' class='text_align_object'>
         <h3>Please enter your data using the following forms:</h3>
       </header>
