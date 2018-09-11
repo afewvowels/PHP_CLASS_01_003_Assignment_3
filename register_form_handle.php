@@ -75,6 +75,12 @@ if(isset($_POST['font_field'])) {
   $errors_array['font_field'] = "Please enter a valid pull down menu selection!";
 }
 
+if(isset($_POST['checkbox_buttons_field'])) {
+  $checkmark_buttons_field = $_POST['checkbox_buttons_field'];
+}else{
+  $errors_array['checkmark_buttons_field'] = "Please make a valid selection from this category!";
+}
+
 function add_slashes($data){
   if(get_magic_quotes_gpc()) $data = stripslashes($data);
   return addslashes($data);
@@ -99,20 +105,37 @@ function strip_slashes($data){
         <legend class='form_title_legend'>User Information</legend>
         <!--This is a text field input-->
         <p class='results_label'>Full name:</p>
-        <div id='div_name' class='div_results'><?php echo $full_name ?></div>
+        <div id='div_name' class='div_results'><?php print_r($full_name) ?></div>
 
         <!--This is a password field input-->
         <p class='results_label'>Password:</p>
-        <div id='div_password' class='div_results'><?php echo $password_field ?></div>
+        <div id='div_password' class='div_results'><?php print_r($password_field) ?></div>
 
         <!--This is a email entry field-->
         <p class='results_label'>Email address:</p>
-        <div id='div_email' class='div_results'><?php echo $email_field ?></div>
+        <div id='div_email' class='div_results'><?php print_r($email_field) ?></div>
 
         <!--This is a textarea field input (text box)-->
         <p class='results_label'>Comments:</p>
-        <div id='div_comments' class='div_results'><?php echo $comments ?></div>
-        <br>
+        <div id='div_comments' class='div_results'><?php print_r($comments) ?></div>
+
+        <!--This is the color that was chosen-->
+        <p class='results_label'>Color:</p>
+        <div id='div_radio_buttons' class='div_results'><?php print_r($radio_buttons_field) ?></div>
+
+        <!--This is the font that was chosen-->
+        <p class='results_label'>Font:</p>
+        <div id='div_font_selection' class='div_results'><?php print_r($font_field) ?></div>
+
+        <!--These are the checkmark boxes checked-->
+        <p class='results_label'>Checkmark selections:</p>
+        <div id='div_checkmark_selections' class='div_results'>
+          <?php
+            foreach($checkmark_buttons_field as $selection) {
+              print_r("$selection<br />");
+            }
+          ?>
+        </div>
       </fieldset>
     </div>
   </section>

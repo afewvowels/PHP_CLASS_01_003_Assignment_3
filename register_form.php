@@ -80,7 +80,7 @@
             <!--This is a drop-down menu with two groups of three options each-->
             <p>
               <label for='font_field'>Select an font:</label>
-              <select name='font_field' id='font_field' size='1' >
+              <select name='font_field' id='font_field' size='1'>
                 <optgroup label='Fonts'>
                   <option value="source_code_pro" selected='selected'>Source Code Pro</option>
                   <option value="montserrat">Montserrat</option>
@@ -88,6 +88,29 @@
                 </optgroup>
               </select>
             </p>
+
+            <!--This is a collection of three checkbox button inputs and their labels-->
+            <div class='ul_region'>
+              <label for="checkbox_buttons_field" class='ul_label'>Checkbox buttons field:</label>
+              <ul>
+                <!--First checkbox option-->
+                <li>
+                  <input type='checkbox' name='checkbox_buttons_field[]' id='first_checkbox' value='First checkbox button' checked='checked' />
+                  <label for="first_checkbox">First checkbox button</label>
+                </li>
+                <!--Second checkbox option-->
+                <li>
+                  <input type='checkbox' name='checkbox_buttons_field[]' id='second_checkbox' value='Second checkbox button' />
+                  <label for="second_checkbox">Second checkbox button</label>
+                </li>
+                <!--Third checkbox option-->
+                <li>
+                  <input type='checkbox' name='checkbox_buttons_field[]' id='third_checkbox' value='Third checkbox button' />
+                  <label for="third_checkbox">Third checkbox button</label>
+                </li>
+              </ul>
+            </div>
+
           </fieldset>
           <!--These are the submit and reset button inputs-->
           <p>
@@ -95,6 +118,10 @@
             <input type='reset' name='reset_button' id='reset_button' value='Click to reset!' />
           </p>
         </form>
+
+        <p>
+          <label></label>
+        </p>
       </section>
 
 

@@ -5,7 +5,8 @@
 
   White: #FCF7F6
   Orange: #943600
-  Green: #08A368
+  Dark Green: #08A368
+  Green: #
   Red: #A60835
   Magenta: #9C0A5D
   Blue: #1F3C8C
@@ -50,6 +51,12 @@ fieldset {
   height: 125px;
 }
 
+#div_checkmark_selections {
+  overflow-y: scroll;
+  height: 70px;
+  margin-bottom: 28px;
+}
+
 .form_title_legend {
   padding-left: 10px;
   padding-right: 10px;
@@ -76,7 +83,6 @@ fieldset {
   border: 2px solid;
   overflow: scroll;
 }
-
 
 /*
   PHP Selectors

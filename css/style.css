@@ -49,6 +49,11 @@ fieldset {
   margin-bottom: 20px;
 }
 
+hr {
+  width: 90%;
+  margin-top: 30px;
+}
+
 input {
   cursor: pointer;
 }
@@ -115,9 +120,13 @@ textarea::placeholder {
   color: #FCF7F6;
 }
 
-hr {
-  width: 90%;
-  margin-top: 30px;
+ul {
+  text-align: left;
+  list-style: none;
+}
+
+ul li {
+  padding-top: 5px;
 }
 
 #background_fill {
@@ -142,15 +151,6 @@ hr {
   width: 190px;
 }
 
-#color_select_region ul {
-  text-align: left;
-  list-style: none;
-}
-
-#color_select_region ul li {
-  padding-top: 5px;
-}
-
 .color_value {
   padding-left: 5px;
   cursor: pointer;
@@ -172,4 +172,17 @@ hr {
 
 .text_align_object {
   text-align: center;
+}
+
+.ul_label {
+  display: block;
+  text-decoration: underline;
+  margin-bottom: -15px;
+}
+
+.ul_region {
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 80%;
 }
