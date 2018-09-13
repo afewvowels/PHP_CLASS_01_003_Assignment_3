@@ -144,11 +144,19 @@ ul li {
 #color_select_label {
   display: block;
   margin-bottom: -15px;
+  text-decoration: underline;
 }
 
 #color_select_region {
   margin: 0 auto;
   width: 190px;
+}
+
+#optional_radio_buttons ul {
+  padding-top: 18px;
+  width: 160px;
+  margin: 0 auto;
+  text-align: left;
 }
 
 .color_value {

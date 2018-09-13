@@ -5,8 +5,7 @@
 
   White: #FCF7F6
   Orange: #943600
-  Dark Green: #08A368
-  Green: #
+  Green: #08A368
   Red: #A60835
   Magenta: #9C0A5D
   Blue: #1F3C8C
@@ -47,14 +46,25 @@ fieldset {
   margin-bottom: 20px;
 }
 
+iframe {
+  width: 500px;
+  height: 1000px;
+  border: 2px solid;
+}
+
 #div_comments {
   height: 125px;
 }
 
-#div_checkmark_selections {
+#div_checkmark_selections_bottommost {
+  overflow-y: scroll;
+  margin-bottom: 28px;
+  height: 120px;
+}
+
+#div_checkmark_selections_uppermost {
   overflow-y: scroll;
   height: 70px;
-  margin-bottom: 28px;
 }
 
 .form_title_legend {
@@ -70,6 +80,7 @@ fieldset {
   padding-left: 24px;
   padding-bottom: 5px;
   text-align: left;
+  overflow: auto;
 }
 
 .div_results {
@@ -81,7 +92,7 @@ fieldset {
   height: 22px;
   width: 87%;
   border: 2px solid;
-  overflow: scroll;
+  overflow: -moz-scrollbars-none;
 }
 
 /*
